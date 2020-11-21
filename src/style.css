@@ -1,1 +1,59 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-image: url("https://casinopartyexpertsindiana.com/wp-content/uploads/2017/03/red-casino-background.jpg");
+  width: 100vw;
+  height: 100vh;
+}
+
+.card {
+  height: 350px;
+  width: 250px;
+  background: white;
+}
+
+.spade,
+.club {
+  color: black;
+}
+.heart,
+.diamond {
+  color: red;
+}
+
+.heart::after,
+.heart::before {
+  content: "\2665";
+}
+
+.club::after,
+.club::before {
+  content: "\2663";
+}
+
+.diamond::after,
+.diamond::before {
+  content: "\2666";
+}
+
+.spade::after,
+.spade::before {
+  content: "\2660";
+}
+
+.card::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.card::after {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.card::after,
+.card::before {
+  font-size: 40px;
+}
